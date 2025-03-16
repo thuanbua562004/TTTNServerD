@@ -39,7 +39,7 @@ const cca = new ConfidentialClientApplication(config);
 
 const authCodeUrlParameters = {
     scopes: ['openid', 'profile', 'email', "api://f1b41edf-ad8b-4a13-a722-26760970681d/admin_access"],
-    redirectUri: 'http://localhost:5000/admin/auth/openid/return'
+    redirectUri: 'https://tttnserverd.onrender.com/admin/auth/openid/return'
 };
 
 router.get('/auth/openid', async (req, res) => {
@@ -52,7 +52,7 @@ router.get('/auth/openid/return', async (req, res) => {
     try {
         const tokenResponse = await cca.acquireTokenByCode({
             code: req.query.code,
-            redirectUri: 'http://localhost:5000/admin/auth/openid/return',
+            redirectUri: 'https://tttnserverd.onrender.com/admin/auth/openid/return',
             scopes: ['openid', 'profile', 'email', 'api://f1b41edf-ad8b-4a13-a722-26760970681d/admin_access'],
         });
 
@@ -64,7 +64,7 @@ router.get('/auth/openid/return', async (req, res) => {
         req.session.save(err => {
             if (err) {
                 console.error('Error saving session:', err);
-                return res.redirect('http://localhost:3000/admin/login'); // Điều hướng đến trang login nếu lưu session thất bại
+                return res.redirect('http://42store.duynguyen23.io.vn:5000/admin/login'); // Điều hướng đến trang login nếu lưu session thất bại
             }
 
             // Điều hướng đến trang chính sau khi session được lưu
@@ -72,7 +72,7 @@ router.get('/auth/openid/return', async (req, res) => {
         });
     } catch (error) {
         console.error('Error during login:', error);
-        res.redirect('http://localhost:3000/admin/login');
+        res.redirect('http://42store.duynguyen23.io.vn:5000/admin/login');
     }
 });
 
