@@ -64,20 +64,20 @@ router.get('/auth/openid/return', async (req, res) => {
         req.session.save(err => {
             if (err) {
                 console.error('Error saving session:', err);
-                return res.redirect('http://42store.duynguyen23.io.vn:5000/admin/login'); // Điều hướng đến trang login nếu lưu session thất bại
+                return res.redirect('http://42store.duynguyen23.io.vn:5000/login'); // Điều hướng đến trang login nếu lưu session thất bại
             }
 
             // Điều hướng đến trang chính sau khi session được lưu
-            res.redirect(`http://42store.duynguyen23.io.vn:3000/admin/home?user=${user}`);
+            res.redirect(`http://42store.duynguyen23.io.vn:3000/home?user=${user}`);
         });
     } catch (error) {
         console.error('Error during login:', error);
-        res.redirect('http://42store.duynguyen23.io.vn:3000/admin/login');
+        res.redirect('http://42store.duynguyen23.io.vn:3000/login');
     }
 });
 
 router.get('/auth/logout', (req, res) => {
-    const logoutUri = "https://login.microsoftonline.com/contoso.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=http://42store.duynguyen23.io.vn:3000/admin/login";
+    const logoutUri = "https://login.microsoftonline.com/contoso.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=http://42store.duynguyen23.io.vn:3000/login";
     req.session.destroy((err) => {
         if (err) {
             return res.status(500).send('Failed to destroy session');
