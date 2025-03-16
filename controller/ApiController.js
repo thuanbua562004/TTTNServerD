@@ -1,5 +1,4 @@
 
-const mongoose = require('../config/ConnectMongo.js');
 const User = require('../Model/User');
 const Product = require('../Model/Product.js');
 const Cart = require('../Model/Cart.js');

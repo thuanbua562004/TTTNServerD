@@ -32,6 +32,7 @@
     "nodemon": "^3.1.4",
     "passport": "^0.7.0",
     "passport-azure-ad": "^4.3.5",
+    "request": "^2.88.2",
     "session": "^0.1.0"
   }
 }
