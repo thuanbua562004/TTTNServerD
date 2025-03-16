@@ -9,7 +9,7 @@ const ManaUser = require('./route/manauser');
 const momo = require('./route/momo');
 const authRouter = require('./route/manauser'); // import the route
 const crypto = require('crypto');
-
+const mongo =require('./connect');
 const secret = crypto.randomBytes(64).toString('hex');
 
 const cors = require('cors');
