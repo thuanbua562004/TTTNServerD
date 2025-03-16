@@ -1,0 +1,124 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../public/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<div class="container mt-3">
+  <div class="row">
+      <!-- Thông tin nhận hàng -->
+      <div class="col-12 col-md-4">
+          <span class="fs-4 text-danger">Thông Tin Nhận Hàng</span>
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Địa chỉ nhận hàng:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nhập địa chỉ tại đây :"></textarea>
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Tên người nhận:</label>
+              <input class="form-control" id="exampleFormControlInput1" placeholder="Nhập tên người nhận">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Số điện thoại:</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Nhập số điện thoại tại đây">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea2" class="form-label">Ghi chú:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Thêm ghi chú (nếu có)"></textarea>
+          </div>
+      </div>
+
+      <!-- Phương thức thanh toán -->
+      <div class="col-12 col-md-4">
+          <span class="fs-4 text-danger">Phương Thức Thanh Toán</span>
+          <select class="mt-3 form-select" aria-label="Default select example">
+              <option selected>Vui lòng chọn phương thức thanh toán!</option>
+              <option value="1">Thanh Toán Khi Nhận Hàng 💵</option>
+              <option value="2">Thanh Toán Online 🏦</option>
+          </select>
+          <div class="form-check mt-3">
+              <input class="form-check-input" type="radio" name="shippingFee" id="flexRadioShipping" checked disabled>
+              <label class="form-check-label text-primary" for="flexRadioShipping">
+                  Phí Vận Chuyển: 25.000 VNĐ
+              </label>
+          </div>
+      </div>
+
+      <!-- Đơn hàng -->
+      <div class="col-12 col-md-4 bg-light">
+          <span class="fs-4 text-danger">Đơn Hàng</span>
+          <hr>
+
+          <!-- Container for scrollable content -->
+          <div class="order-container" style="max-height: 300px; overflow-x: auto;">
+              <!-- Product 1 -->
+              <div class="row mb-3">
+                  <div class="col-3">
+                      <img class="img-fluid" src="../public/image/tee.webp" alt="Áo Thun">
+                  </div>
+                  <div class="col-6">
+                      <span class="d-block">Áo Thun Teelab Local Brand Unisex</span>
+                      <span class="d-block text-danger">Vàng / M</span>
+                  </div>
+                  <div class="col-3 text-primary">
+                      <span>120.000 VNĐ</span>
+                  </div>
+              </div>
+              <hr>
+
+              <!-- Product 2 -->
+              <div class="row mb-3">
+                  <div class="col-3">
+                      <img class="img-fluid" src="../public/image/tee.webp" alt="Áo Thun">
+                  </div>
+                  <div class="col-6">
+                      <span class="d-block">Áo Thun Miucho Hottrend</span>
+                      <span class="d-block text-danger">Đỏ / L</span>
+                  </div>
+                  <div class="col-3 text-primary">
+                      <span>150.000 VNĐ</span>
+                  </div>
+              </div>
+              <hr>
+                       <!-- Product 2 -->
+                       <div class="row mb-3">
+                        <div class="col-3">
+                            <img class="img-fluid" src="../public/image/tee.webp" alt="Áo Thun">
+                        </div>
+                        <div class="col-6">
+                            <span class="d-block">Áo Thun Miucho Hottrend</span>
+                            <span class="d-block text-danger">Đỏ / L</span>
+                        </div>
+                        <div class="col-3 text-primary">
+                            <span>150.000 VNĐ</span>
+                        </div>
+                    </div>
+                    <hr>
+          </div>
+
+          <div class="d-flex justify-content-between">
+              <span>Tạm tính:</span>
+              <span>270.000 VNĐ</span>
+          </div>
+          <div class="d-flex justify-content-between">
+              <span>Phí vận chuyển:</span>
+              <span>25.000 VNĐ</span>
+          </div>
+          <hr>
+
+          <div  class="label-total">
+            <div class="d-flex justify-content-between fw-bold">
+              <span>Tổng:</span>
+              <span>295.000 VNĐ</span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="row mt-3">
+              <div class="col">
+                  <a href="#" class="text-decoration-none"><i class="fa-solid fa-less-than"></i> Quay Về Giỏ</a>
+              </div>
+              <div class="col text-end">
+                  <button type="button" class="btn btn-danger">Thanh Toán</button>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>

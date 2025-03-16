@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-0 px-md-5">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../public/image/shell.svg" alt="Logo" class="bg-white" style="height: 40px;">
+      </a>
+  
+      <!-- Nút toggler cho màn hình nhỏ -->
+      <button class="navbar-toggler" style="outline: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+  
+      <!-- Menu chính (HOME, ABOUT, CONTACT) trong collapse -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-lg-5 mx-md-0 mx-xs-0">
+            <a class="font-h nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item mx-lg-5 mx-md-0 mx-xs-0">
+            <a class="font-h nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item mx-lg-5 mx-md-0 mx-xs-0">
+            <a class="font-h nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Phần Login và Cart luôn hiển thị, không bị ảnh hưởng bởi toggler -->
+      <ul class="navbar-nav d-flex flex-row align-items-center ms-auto">
+        <li class="nav-item me-3">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-user text-white me-2"></i>
+            <a class="nav-link text-danger icon" href="login.html">Login</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-shopping-cart text-white me-2"></i>
+            <a class="nav-link text-danger icon" href="cart.html">Cart</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

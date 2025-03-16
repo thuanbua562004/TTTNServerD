@@ -1,0 +1,138 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important
+}
+@media (max-width: 991.98px) {
+    .nav-item .icon {
+        display: none; 
+    }
+
+    
+#hiden{
+    display: none !important;;
+}
+.fix-row{
+    display: flex;               
+    flex-wrap: wrap;             
+    margin-right: -15px;       
+    margin-left: -15px;        
+}
+.price-resphone{
+    width: 100%;
+    display:flex;
+    justify-content: end;
+}
+.trash-resphone{
+    width: 50%;
+    display:flex;
+    justify-content: end;
+}
+.text-price{
+    display: -webkit-box;          
+    -webkit-box-orient: vertical;   
+    -webkit-line-clamp:2;      
+    overflow: hidden;    
+}
+.number-resphone{
+    height: 0px !important;
+    padding: 0;
+    line-height: 50px;
+}
+/* //product detail */
+.product-resphonve{
+    width: 100%;
+}
+.fix-logo-resphone{
+    margin-right: 0 !important;
+    justify-content: center;
+    display: flex;
+}
+.show-menu{
+    display: contents !important;
+}
+.label-total {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa; 
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-bottom: 100px;
+}
+}
+.number-resphone{
+    width: 150px;
+}
+.hover:hover {
+    transform: scale(1.1) ;
+    
+}
+
+ /* CSS CARD- PRODUCT */
+
+
+
+/* FOOTER */
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: #ddd;
+}
+
+footer img {
+    border-radius: 50%;
+}
+
+.css-btn{
+    color: #000000;
+    padding: 0 !important;
+    margin: 0 5px;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px !important;
+    text-align: center;
+    background-color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+}
+.vertical-line {
+    border-left: px solid #920404;
+    height: 100px;    
+}
+
+/* //////header */
+.navbar-nav {
+    flex-direction: row;
+}
+.navbar-collapse {
+    flex-grow: 0; 
+}
+.header-postion{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa; 
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    margin-bottom: 100px !important
+}
+body {
+    padding-top: 70px; /* Khoảng trống để tránh navbar che mất nội dung */
+}
+.navbar-toggler {
+    outline: none;
+}

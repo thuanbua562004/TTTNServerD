@@ -1,0 +1,87 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../public/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<div class="container mt-5 px-5 px-md-0  mx-md-auto w-100">
+    <div class="ms-">
+        <span class="text-danger fs-4 fw-bold">Giỏ Hàng Của Bạn</span>
+        <span class="d-none">Giỏ Hàng Trống !</span>
+    </div>
+    
+    <div class="row justify-content-center mt-4">
+        <div class="row ">
+            <table class="table table-bordered  text-center align-middle">
+                <thead class="table-light d-none d-lg-hiden ">
+                    <tr>
+                        <th scope="col">Thông Tin Sản Phẩm</th>
+                        <th scope="col">Đơn Giá</th>
+                        <th scope="col">Số Lượng</th>
+                        <th scope="col">Thành Tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class=" fix-row">
+                        <td class="col-sm-12">
+                            <div class="d-flex align-items-center">
+                                <img src="../public/image/tee.webp" alt="Product 1" class="img-fluid me-3" style="width: 80px;">
+                                <span class="text-price">Áo Thun Teelab Local Brand Unisex Carita Feliz Flower Tshirt TS279 Vàng / M</span>
+                               
+                            </div>
+                            <span class="ms-25 d-flex align-items-start justify-content-center fs-6 p-sm-0">Vàng/M</span>
+                        </td>
+                        <td class="col-sm-12 text-danger  price-resphone">195.000đ</td>
+                        
+                        <td class="col-sm-12 h-100 number-resphone d-flex align-items-center justify-content-center trash-resphone p-sm-0">
+                              <div class="row row-cols-3 input-group d-flex  mt-lg-5 mt-sm-1 d-flex align-items-center justify-content-center">
+                                <input type="button" value="-" class="col button-minus btn btn-outline-secondary css-btn" data-field="quantity">
+                                <span style="display: flex;justify-content: center; width: 25px;" class="col p-0">1</span>
+                                <input type="button" value="+" class="button-plus btn btn-outline-secondary col css-btn" data-field="quantity">
+                              </div>
+                            </div>
+                         
+                          </td>
+                        <td class="col-sm-12   text-danger" id="hiden">780.000đ</td>
+
+                        <td class="col-sm-12 text-danger price-resphone">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="text-danger fa-solid fa-trash"></i>
+                            </a>
+                        </td>                    
+                    <tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="cartToltal mt-3 d-flex justify-content-end p-5">
+      <div class="cart">
+        <span class="fw-bold">Tổng Tiền : 150.000 VNĐ</span>
+        <br>
+        <button type="button" class="mt-4 btn text-white w-100 btn btn-danger">Thanh Toán</button>
+      </div>
+
+    </div>
+
+
+    <!-- ////////////// modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Bạn có muốn xóa sản phẩm này không ?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-primary">Xóa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
