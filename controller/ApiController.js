@@ -9,7 +9,7 @@ const Voucher = require('../Model/Voucher.js');
 const Comment = require('../Model/Comment.js');
 const Category = require('../Model/Category.js');
 
-const connect=require('../config/ConnectMongo.js')
+const connect = require('../config/ConnectMongo.js')
 connect();
 ////////////////Api User////////////////
 
