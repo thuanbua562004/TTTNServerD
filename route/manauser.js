@@ -21,7 +21,7 @@ const router = express.Router();
 const config = {
     auth: {
         clientId:"f1b41edf-ad8b-4a13-a722-26760970681d",
-        authority: " https://login.microsoftonline.com/b7c1605c-ae68-41ad-bdae-ff8385ab6242",
+        authority: "https://login.microsoftonline.com/b7c1605c-ae68-41ad-bdae-ff8385ab6242",
         clientSecret:   "GuX8Q~6kHXdAwXCd~Ui.gU41mPO16x3GKiHU6clw"
     },
     system: {
@@ -68,7 +68,7 @@ router.get('/auth/openid/return', async (req, res) => {
             }
 
             // Điều hướng đến trang chính sau khi session được lưu
-            res.redirect(`http://localhost:3000/admin/home?user=${user}`);
+            res.redirect(`http://42store.duynguyen23.io.vn:5000/admin/home?user=${user}`);
         });
     } catch (error) {
         console.error('Error during login:', error);
@@ -77,7 +77,7 @@ router.get('/auth/openid/return', async (req, res) => {
 });
 
 router.get('/auth/logout', (req, res) => {
-    const logoutUri = "https://login.microsoftonline.com/contoso.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=http://localhost:3000/admin/login";
+    const logoutUri = "https://login.microsoftonline.com/contoso.onmicrosoft.com/oauth2/v2.0/logout?post_logout_redirect_uri=http://42store.duynguyen23.io.vn:5000/admin/login";
     req.session.destroy((err) => {
         if (err) {
             return res.status(500).send('Failed to destroy session');
